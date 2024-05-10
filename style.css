@@ -1,0 +1,299 @@
+:root {
+    --Fonttitle: 'Days one', sans-serif;
+    --fuenteparrafo:'Open sans', sans-serif;
+    --color1: #585757;
+    --color2: #517E7E  ;
+    --color3: 585757(245, 252, 245);
+    --white: #EFEFEF;
+
+}
+
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Globales */
+  body { 
+    background-color: var(--color1);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: var(--fuenteparrafo);
+    overflow-x: hidden;
+  }
+  
+  ol, ul, li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  
+  h1, h2, h3, h4 {
+    color: var(--white);
+    line-height: 1.5;
+  }
+  
+  /* Menu */
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .menu_header img {
+    height: 80px; 
+  }
+  
+  .menu_list {
+    display: inline-flex;
+    gap: 1rem;
+  }
+  
+  /* Perfil */
+  .perfil{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0 16px; /* Reducir el padding del hero para dispositivos móviles */
+  }
+  
+  .perfil_profile {
+    max-width: 100%; /* Ajustar la imagen de perfil al 100% del ancho */
+  }
+  
+  .perfil_description {
+    align-items: center;
+    margin-left: 10px; /* Reducir el margen izquierdo */
+  }
+  
+  .perfil_bio {
+    font-size: 16px; /* Reducir el tamaño de la fuente */
+  }
+  
+  .perfil_bio_ocupacion {
+    font-size: 30px; /* Reducir el tamaño de la fuente */
+  }
+  
+  .perfil_redes {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 10px; /* Reducir el margen superior */
+  }
+  
+  .perfil_redes_item img {
+    height: 30px; /* Reducir el tamaño de las imágenes de redes sociales */
+  }
+  
+  /* Sobre mí */
+  .me {
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Reducir el padding */
+  }
+  
+  .me_div {
+    background-color: var(--color3);
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .me_title {
+    font-size: 20px; /* Reducir el tamaño de la fuente */
+  }
+  
+  /* habilidades */
+  .habilidades {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .habilidades_bloques {
+    display: flex;
+    justify-content: center;
+    width: 80px; /* Reducir el ancho de los bloques de habilidades */
+    flex: 1 0 200px;
+    text-align: center;
+    background-color: var(--color3);
+    padding: 10px; /* Reducir el padding */
+  }
+  
+  .habilidades_img img {
+    height: 60px; /* Reducir el tamaño de las imágenes */
+  }
+  
+  .habilidades_titulo {
+    font-size: 30px; /* Reducir el tamaño de la fuente */
+  }
+  
+  /* Experiencia */
+  .experiencia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  
+  .experiencia_line {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajustar el grid automáticamente */
+    gap: 1rem;
+    padding: 0 16px; /* Reducir el padding */
+  }
+  
+  .experiencia_box {
+    padding: 1rem;
+    font-size: 20px; /* Reducir el tamaño de la fuente */
+  }
+  
+  .experience_img {
+    max-width: 100%; /* Ajustar el ancho de la imagen al 100% */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+  }
+  
+  .experience_back {
+    background-color: var(--color3);
+    padding: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .experience_info {
+    font-size: 18px; /* Reducir el tamaño de la fuente */
+  }
+  
+  .experience_info a {
+    color: var(--color2);
+  }
+  
+  /* Estilos para la sección de academia */
+.academico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Ajusta el padding según tu diseño */
+}
+
+.academico_title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.academico_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre elementos */
+}
+
+.academico_box {
+  max-width: 300px; /* Ajusta el ancho máximo según tu diseño */
+  text-align: center;
+}
+
+.academico_item_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.academico_item_title h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px; /* Espaciado superior */
+  margin-bottom: 5px; /* Espaciado inferior */
+}
+
+.academico_item_subtitle p {
+  font-size: 16px;
+  color: #517E7E; /* Color de texto secundario */
+}
+  
+  /* Contacto */
+  .contacto {
+    max-width: 100%;
+  }
+  
+  .contacto_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .contacto_text {
+    background-color: var(--color3);
+    padding: 1rem;
+  }
+  
+  .contacto_text h2 {
+    font-size: 30px; /* Reducir el tamaño de la fuente */
+  }
+  
+  .contacto_form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .contacto_campos {
+    background-color: var(--color3);
+    border-width: 1px;
+    border-style: inset;
+    padding: 0.5rem;
+    color: var(--white);
+  }
+  
+  .contacto_button {
+    text-align: center;
+    max-width: 200px;
+    height: 50px;
+    font-size: 16px; /* Reducir el tamaño de la fuente */
+    text-transform: uppercase;
+    padding: 0.5rem 2rem; /* Reducir el padding */
+    background-color: var(--color2);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+  }
+  
+  ::placeholder {
+    color: rgba(225, 225, 225, 0.85);
+    font-size: 16px;
+  }
+  
+  /* Footer */
+  .footer {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .footer_text {
+    text-align: center;
+    font-size: 16px; /* Reducir el tamaño de la fuente */
+  }
+  
